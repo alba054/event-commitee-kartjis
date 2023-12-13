@@ -2,14 +2,14 @@ import { hashPassword } from "../utils";
 import db from "../utils/database";
 
 const main = async () => {
-  const eventId = "e0306093-b0ce-4f31-bb1e-ab8d1089095e";
+  const eventId = "e495fb2c-f422-43bf-a815-2eb6967293e5";
 
   await db.user.create({
     data: {
-      username: "yoyo101",
-      password: await hashPassword("randompassword"),
-      name: "yoyo jr",
-      email: "yoyo@mail.com",
+      username: "commiteekockditangkis",
+      password: hashPassword("randompassword"),
+      name: "panitia 1",
+      email: "panitia1@mail.com",
       eventId,
     },
   });
